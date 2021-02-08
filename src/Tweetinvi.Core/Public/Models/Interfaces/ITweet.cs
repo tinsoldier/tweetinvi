@@ -193,6 +193,8 @@ namespace Tweetinvi.Models
         /// </summary>
         string WithheldScope { get; }
 
+        Core.DTO.MatchingRule[] MatchingRules { get; }
+
         #endregion
 
         #region Tweetinvi API Properties

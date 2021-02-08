@@ -257,6 +257,8 @@ namespace Tweetinvi.Core.Models
 
         public string WithheldScope => _tweetDTO.WithheldScope;
 
+        public DTO.MatchingRule[] MatchingRules => _tweetDTO.MatchingRules;
+
         #endregion
 
         #region Tweetinvi API Accessors

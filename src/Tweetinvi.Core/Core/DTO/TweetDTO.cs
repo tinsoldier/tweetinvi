@@ -138,5 +138,8 @@ namespace Tweetinvi.Core.DTO
 
         [JsonProperty("withheld_scope")]
         public string WithheldScope { get; set; }
+
+        [JsonProperty("matching_rules")]
+        public MatchingRule[] MatchingRules { get; set; }
     }
 }

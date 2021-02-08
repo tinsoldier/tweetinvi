@@ -4,7 +4,7 @@ using Tweetinvi.Models.Entities;
 
 namespace Tweetinvi.Models.DTO
 {
-    public interface  ITweetDTO : ITweetIdentifier
+    public interface ITweetDTO : ITweetIdentifier
     {
         string Text { get; set; }
 
@@ -86,5 +86,6 @@ namespace Tweetinvi.Models.DTO
 
         IPlace Place { get; set; }
 
+        Core.DTO.MatchingRule[] MatchingRules { get; set; }
     }
 }
