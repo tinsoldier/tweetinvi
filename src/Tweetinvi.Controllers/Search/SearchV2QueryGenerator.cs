@@ -21,7 +21,8 @@ namespace Tweetinvi.Controllers.Search
 
         public string GetSearchTweetsV2Query(ISearchTweetsV2Parameters parameters)
         {
-            var query = new StringBuilder("https://api.twitter.com/2/tweets/search/recent");
+            var query = new StringBuilder("https://api.twitter.com/2/tweets/search/");
+            query.Append(parameters.Endpoint);
             query.AddParameterToQuery("query", parameters.Query);
             query.AddParameterToQuery("end_time", parameters.EndTime?.ToString("yyy-MM-ddThh:mm:ssZ"));
             query.AddParameterToQuery("max_results", parameters.PageSize);
