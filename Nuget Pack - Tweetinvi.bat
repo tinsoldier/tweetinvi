@@ -8,4 +8,4 @@ REM nuget push -Source "SwanIslandNuget" -ApiKey VSTS ./src/Tweetinvi/bin/Releas
 
 dotnet pack .\Tweetinvi.NETCore.sln --output nupkgs
 
-dotnet nuget push "nupkgs\Tweetinvi.*.nupkg" --source "SwanIslandNuget" --api-key VSTS --skip-duplicate
+dotnet nuget push "nupkgs\Tweetinvi.*.nupkg" --source "SwanIslandNuget" --api-key VSTS --skip-duplicate --interactive
